@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container">
+            <h1 id="quiz-title">General Knowledge Quiz</h1>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question">Loading question...</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Buttons will be injected here -->
+            </div>
+            <button id="next-btn" class="btn next-btn hide">Next</button>
+        </div>
+        <div id="result-container" class="hide">
+            <h2>Quiz Completed!</h2>
+            <p>Your score is: <span id="score"></span></p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
