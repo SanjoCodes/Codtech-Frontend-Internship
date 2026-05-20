@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjo | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Sanjo.<span>dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 class="subtitle">Hello, I'm</h3>
+            <h1 class="title">Sanjo</h1>
+            <h2 class="role">Frontend Web Developer</h2>
+            <p class="description">I craft beautiful, dynamic, and user-friendly web experiences. Currently completing my internship at Codtech IT Solutions.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glow-circle"></div>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Coding Workspace">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About <span>Me</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate Frontend Developer with a deep focus on crafting interactive, high-performance web applications. During my Codtech IT Solutions internship, I have built multiple real-world applications including a Quiz App, a Real-Time Chat App, and now this portfolio.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3 / SCSS</span>
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop" alt="Quiz App">
+                </div>
+                <div class="project-info">
+                    <h3>Interactive Quiz App</h3>
+                    <p>A dynamic web application built with vanilla JavaScript, featuring real-time score tracking and elegant visual feedback. This was my Task 1 project.</p>
+                    <a href="#" class="btn primary-btn small-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=2070&auto=format&fit=crop" alt="Chat App">
+                </div>
+                <div class="project-info">
+                    <h3>Real-Time Chat App</h3>
+                    <p>A sophisticated chat interface leveraging React.js and WebSockets to deliver instant messaging with full history. This was my Task 2 project.</p>
+                    <a href="#" class="btn primary-btn small-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Portfolio">
+                </div>
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>A sleek, dark-mode single-page portfolio designed to showcase my web development skills. This is my Task 3 project.</p>
+                    <a href="#" class="btn primary-btn small-btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In <span>Touch</span></h2>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sanjo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
